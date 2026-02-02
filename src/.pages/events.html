@@ -13,7 +13,7 @@
       class="flex flex-row items-center justify-between p-4 bg-azure-blue text-white border-b-32 border-b-pale-amber"
     >
       <!-- Replace with science club logo -->
-      <a href="/">
+      <a href="../../index.html">
         <svg
           fill="#ffc61e"
           height="50"
@@ -61,75 +61,85 @@
       </a>
       <!-- - -->
       <div class="flex flex-row gap-6 p-2 text-xl">
-        <a href="#about">About</a>
-        <a href="pages/contact">Contact</a>
-        <a href="pages/events">Events</a>
-        <a href="pages/join">Join</a>
+        <a href="../../index.html#about">About</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./events.html">Events</a>
+        <a href="./join.html">Join</a>
       </div>
     </header>
     <main>
       <div
-        id="hero-container"
-        class="relative flex flex-row items-center justify-center min-h-70 w-full overflow-hidden"
+        id="event-container"
+        class="relative flex flex-row items-center justify-between min-h-80 w-full overflow-hidden"
       >
-        <video autoplay muted loop class="absolute w-full h-full object-cover">
-          <source src="media/hero.mp4" type="video/mp4" />
-          Your browser doesn't support the video tag!
-        </video>
+        <img
+          src="/media/club_banner.jpg"
+          alt="Science Club Events"
+          class="absolute w-full h-full object-cover"
+        />
         <div
-          id="hero-overlay"
-          class="absolute w-full h-full bg-onyx/60 z-0 inset-shadow-sm inset-shadow-onyx"
+          id="banner-overlay"
+          class="absolute w-full h-full bg-linear-to-r from-onyx/95 to-onyx/0 z-0 inset-shadow-sm inset-shadow-onyx"
         ></div>
+        <!-- Event Box -->
         <div
-          id="hero-text"
-          class="flex flex-row min-w-full items-center justify-between p-40 z-10 text-xl text-white text-center"
+          class="bg-pale-slate/98 z-10 rounded-md p-8 m-16 max-w-3/4 drop-shadow-lg/50"
         >
-          <div class="flex flex-col items-start gap-2 drop-shadow-lg/50">
-            <h1 class="font-extrabold text-7xl">Science,</h1>
-            <h2 class="font-medium text-5xl">beyond the<br />classroom!</h2>
-          </div>
-          <div class="flex flex-col gap-4 drop-shadow-lg/50">
-            <h2>Enhance your learning</h2>
-            <div class="flex flex-row justify-between gap-4">
-              <a
-                href="./src/pages/join.html"
-                class="bg-pale-amber text-onyx p-1 min-w-30 rounded-md border-t-4 border-t-onyx/25"
-                >JOIN</a
-              >
-              <a
-                href="#about"
-                class="bg-pale-slate text-onyx p-1 min-w-30 rounded-md border-t-3 border-t-onyx/25"
-                >LEARN</a
-              >
+          <h1 class="font-extrabold text-5xl mb-4">Upcoming Events</h1>
+          <div class="flex flex-col gap-6 text-lg">
+            <div
+              class="bg-slate-500/20 p-4 rounded-md border-t-8 border-t-pale-amber"
+            >
+              <h2 class="font-bold text-2xl">🔬 Lab Exploration Day</h2>
+              <p class="italic">
+                Date: March 12th, 2026 | Time: 10:00 AM - 1:00pm
+              </p>
+              <p>
+                Join us for our annual Science Fair where students showcase
+                their innovative projects and experiments. Open to all students
+                and faculty!
+              </p>
+            </div>
+            <div
+              class="bg-slate-500/20 p-4 rounded-sm border-t-8 border-t-pale-amber"
+            >
+              <h2 class="font-bold text-2xl">🌱 Environmental Science Talk</h2>
+              <p class="italic">
+                Date: April 5th, 2026 | Time: 1:00 PM - 3:00 PM
+              </p>
+              <p>Guest speaker on sustainability.</p>
+            </div>
+            <div
+              class="bg-slate-500/20 p-4 rounded-sm border-t-8 border-t-pale-amber"
+            >
+              <h2 class="font-bold text-2xl">🧪 Science Fair Workshop</h2>
+              <p class="italic">
+                Date: April 20th, 2026 | Time: 10:00 AM - 1:00 PM
+              </p>
+              <p>
+                Prepare and present research projects! Open to all students and
+                faculty!
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div id="about" class="bg-pale-slate p-16 text-onyx">
-        <h2 class="font-extrabold text-4xl mb-4">About Us</h2>
-        <p class="text-lg">
-          The San Jacinto College Science Club is dedicated to bringing students
-          together who share a passion for science, discovery, and innovation.
-          Our club supports academic growth through hands-on activities, campus
-          events, guest speakers, and collaborative learning experiences.
-        </p>
       </div>
     </main>
     <footer
       class="flex flex-row min-h-1/4 overflow-clip p-16 bg-onyx gap-6 text-white border-t-16 border-t-pale-amber"
     >
       <div id="copyright" class="flex flex-col items-start max-w-1/4">
-        <p>&copy; 2026 San Jacinto College Science Club</p>
+        <p>&copy 2026 San Jacinto College Science Club</p>
         <p>Logo sourced online and used for educational purposes only.</p>
       </div>
       <div id="sitemap" class="flex flex-col items-start">
         <h4 class="font-bold">Sitemap</h4>
         <ol>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="pages/contact">Contact</a></li>
-          <li><a href="pages/events">Events</a></li>
-          <li><a href="pages/join">Join</a></li>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../index.html#about">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./events.html">Events</a></li>
+          <li><a href="./join.html">Join</a></li>
         </ol>
       </div>
       <div id="contact-info" class="flex flex-col items-start">
