@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+  --color-pale-amber: #dbd56e;
+  --color-pale-slate: #cdd1de;
+  --color-azure-blue: #0070e0;
+  --color-onyx: #121619;
+  --color-sweet-peony: #e56399;
+}
+
+:root {
+  font-family: "Jost", sans-serif;
+  font-size: 1.2rem;
+}

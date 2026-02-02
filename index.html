@@ -2,9 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Replace later with science club logo -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <title>Science Club | San Jacinto College</title>
   </head>
-  <body></body>
+  <body>
+    <header
+      class="flex flex-row items-center justify-between p-4 bg-azure-blue text-white border-b-32 border-b-pale-amber"
+    >
+      <svg width="50" height="50" class="bi bi-beaker" viewBox="0 0 16 16">
+        <circle cx="0" cy="0" r="16" />
+      </svg>
+      <div class="flex flex-row gap-6 p-4">
+        <a href="./src/pages/about.html">About</a>
+        <a href="./src/pages/contact.html">Contact</a>
+        <a href="./src/pages/events.html">Events</a>
+      </div>
+    </header>
+    <main>
+      <div
+        id="hero-container"
+        class="relative flex flex-row items-center justify-center min-h-70 w-full overflow-hidden"
+      >
+        <video autoplay muted loop class="absolute w-full h-full object-cover">
+          <source src="media/hero.mp4" type="video/mp4" />
+          Your browser doesn't support the video tag!
+        </video>
+        <div
+          id="hero-overlay"
+          class="absolute w-full h-full bg-onyx/60 z-0 inset-shadow-sm inset-shadow-onyx"
+        ></div>
+        <div
+          id="hero-text"
+          class="flex flex-row min-w-full items-center justify-between p-36 z-10 text-xl text-white text-center"
+        >
+          <div class="flex flex-col items-start gap-2">
+            <h1 class="font-extrabold text-7xl">Science,</h1>
+            <h2 class="font-medium text-5xl">beyond the<br />classroom!</h2>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2>Enhance your learning</h2>
+            <div class="flex flex-row justify-between gap-4">
+              <a
+                href="./src/pages/join.html"
+                class="bg-pale-amber text-onyx p-1 min-w-30 rounded-lg border-t-3 border-t-onyx/25"
+                >JOIN</a
+              >
+              <a
+                href="./src/pages/about.html"
+                class="bg-pale-slate text-onyx p-1 min-w-30 rounded-lg border-t-3 border-t-onyx/25"
+                >LEARN</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="flex flex-row min-h-1/2 overflow-clip p-4 bg-onyx text-white border-t-8 border-t-pale-amber"
+    >
+      <p>Footer</p>
+    </footer>
+  </body>
 </html>
