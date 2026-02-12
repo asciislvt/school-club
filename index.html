@@ -32,9 +32,24 @@
       </div>
       <!-- Smaller screen navigation -->
       <div
-        class="bg-pale-amber text-onyx flex w-full flex-col items-center p-4 sm:hidden"
+        id="mobile-menu"
+        class="bg-pale-amber text-onyx flex h-fit w-full flex-col items-center p-4 sm:hidden"
       >
-        <nav class="flex flex-col gap-4 text-center text-lg">
+        <button
+          id="menu-toggle"
+          aria-expanded="false"
+          class="flex h-fit w-full justify-center pt-1 pr-4 pb-1 pl-4"
+        >
+          <img
+            src="/menu_icon.svg"
+            alt="Menu Icon"
+            class="h-8 w-auto self-center"
+          />
+        </button>
+        <nav
+          aria-hidden="true"
+          class="flex hidden flex-col gap-4 text-center text-lg"
+        >
           <a href="#about">About</a>
           <a href="pages/contact">Contact</a>
           <a href="pages/events">Events</a>
@@ -124,5 +139,6 @@
         </ul>
       </div>
     </footer>
+    <script type="module" src="./src/mobile-menu.js"></script>
   </body>
 </html>
