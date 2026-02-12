@@ -62,7 +62,12 @@
         id="hero-container"
         class="relative flex min-h-70 w-full flex-row items-center justify-center overflow-hidden"
       >
-        <video autoplay muted loop class="absolute h-full w-full object-cover">
+        <video
+          autoplay
+          muted
+          loop
+          class="pointer-events-none absolute h-full w-full object-cover"
+        >
           <source src="media/hero.mp4" type="video/mp4" />
           Your browser doesn't support the video tag!
         </video>
@@ -82,8 +87,8 @@
             <h2>Enhance your learning</h2>
             <div class="flex flex-row justify-between gap-4">
               <a
-                href="./src/pages/join.html"
-                class="bg-pale-amber text-onyx border-t-onyx/25 min-w-30 rounded-md border-t-4 p-1"
+                href="pages/join"
+                class="bg-pale-amber text-onyx border-t-onyxpointer-events-none/25 min-w-30 rounded-md border-t-4 p-1"
                 >JOIN</a
               >
               <a
