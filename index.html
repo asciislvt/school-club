@@ -9,67 +9,79 @@
     <title>Science Club | San Jacinto College</title>
   </head>
   <body>
-    <header
-      class="flex flex-row items-center justify-between p-4 bg-azure-blue text-white border-b-32 border-b-pale-amber"
-    >
-      <!-- Replace with science club logo -->
-      <a href="/">
-        <img
-          src="/microscope.svg"
-          alt="Science Club Logo"
-          class="h-16 w-auto"
-        />
-      </a>
-      <!-- - -->
-      <nav
-        class="flex flex-col items-end sm:flex-row sm:gap-6 sm:p-2 sm:text-xl"
+    <header class="bg-azure-blue flex flex-col items-center text-white">
+      <!-- Container for logo and nav links -->
+      <div
+        class="flex w-full flex-col items-center p-4 sm:flex-row sm:justify-between"
       >
-        <a href="#about">About</a>
-        <a href="pages/contact">Contact</a>
-        <a href="pages/events">Events</a>
-        <a href="pages/join">Join</a>
-      </nav>
+        <!-- Logo -->
+        <a href="/" class="">
+          <img
+            src="/microscope.svg"
+            alt="Science Club Logo"
+            class="h-16 w-auto"
+          />
+        </a>
+        <!-- Desktop navigation -->
+        <nav class="hidden sm:flex sm:flex-row sm:gap-6 sm:p-2 sm:text-xl">
+          <a href="#about">About</a>
+          <a href="pages/contact">Contact</a>
+          <a href="pages/events">Events</a>
+          <a href="pages/join">Join</a>
+        </nav>
+      </div>
+      <!-- Smaller screen navigation -->
+      <div
+        class="bg-pale-amber text-onyx flex w-full flex-col items-center p-4 sm:hidden"
+      >
+        <nav class="flex flex-col gap-4 text-center text-lg">
+          <a href="#about">About</a>
+          <a href="pages/contact">Contact</a>
+          <a href="pages/events">Events</a>
+          <a href="pages/join">Join</a>
+        </nav>
+      </div>
     </header>
     <main>
       <div
         id="hero-container"
-        class="relative flex flex-row items-center justify-center min-h-70 w-full overflow-hidden"
+        class="relative flex min-h-70 w-full flex-row items-center justify-center overflow-hidden"
       >
-        <video autoplay muted loop class="absolute w-full h-full object-cover">
+        <video autoplay muted loop class="absolute h-full w-full object-cover">
           <source src="media/hero.mp4" type="video/mp4" />
           Your browser doesn't support the video tag!
         </video>
         <div
           id="hero-overlay"
-          class="absolute w-full h-full bg-onyx/60 z-10 inset-shadow-sm inset-shadow-onyx"
+          class="bg-onyx/60 inset-shadow-onyx absolute z-10 h-full w-full inset-shadow-sm"
         ></div>
         <div
           id="hero-text"
-          class="flex flex-col gap-5 md:flex-row min-w-full items-center justify-between p-40 z-11 text-xl text-white text-center"
+          class="z-11 flex min-w-full flex-col items-center justify-between gap-5 p-40 text-center text-xl text-white md:flex-row"
         >
-          <div class="flex flex-col md:items-start md:gap-2 drop-shadow-lg/50">
-            <h1 class="font-extrabold text-7xl">Science,</h1>
-            <h2 class="font-medium text-5xl">beyond the<br />classroom!</h2>
+          <div class="flex flex-col drop-shadow-lg/50 md:items-start md:gap-2">
+            <h1 class="text-7xl font-extrabold">Science,</h1>
+            <h2 class="text-5xl font-medium">beyond the<br />classroom!</h2>
           </div>
           <div class="flex flex-col gap-4 drop-shadow-lg/50">
             <h2>Enhance your learning</h2>
             <div class="flex flex-row justify-between gap-4">
               <a
                 href="./src/pages/join.html"
-                class="bg-pale-amber text-onyx p-1 min-w-30 rounded-md border-t-4 border-t-onyx/25"
+                class="bg-pale-amber text-onyx border-t-onyx/25 min-w-30 rounded-md border-t-4 p-1"
                 >JOIN</a
               >
               <a
                 href="#about"
-                class="bg-pale-slate text-onyx p-1 min-w-30 rounded-md border-t-3 border-t-onyx/25"
+                class="bg-pale-slate text-onyx border-t-onyx/25 min-w-30 rounded-md border-t-3 p-1"
                 >LEARN</a
               >
             </div>
           </div>
         </div>
       </div>
-      <div id="about" class="bg-pale-slate p-16 text-onyx">
-        <h2 class="font-extrabold text-4xl mb-4">About Us</h2>
+      <div id="about" class="bg-pale-slate text-onyx p-16">
+        <h2 class="mb-4 text-4xl font-extrabold">About Us</h2>
         <p class="text-lg">
           The San Jacinto College Science Club is dedicated to bringing students
           together who share a passion for science, discovery, and innovation.
@@ -79,9 +91,9 @@
       </div>
     </main>
     <footer
-      class="flex flex-row min-h-1/4 overflow-clip p-16 bg-onyx gap-6 text-white border-t-16 border-t-pale-amber"
+      class="bg-onyx border-t-pale-amber flex min-h-1/4 flex-row gap-6 overflow-clip border-t-16 p-16 text-white"
     >
-      <div id="copyright" class="flex flex-col items-start max-w-1/4">
+      <div id="copyright" class="flex max-w-1/4 flex-col items-start">
         <p>&copy; 2026 San Jacinto College Science Club</p>
         <p>Logo sourced online and used for educational purposes only.</p>
       </div>
