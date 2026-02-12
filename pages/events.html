@@ -3,94 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Replace later with science club logo -->
-    <link rel="icon" type="image/svg+xml" href="/school-club/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Science Club | San Jacinto College</title>
-    <link rel="stylesheet" crossorigin href="/school-club/assets/index-DgFk3FZk.css">
+    <script type="module" crossorigin src="/school-club/assets/mobile-menu-CFRxDym1.js"></script>
+    <link rel="stylesheet" crossorigin href="/school-club/assets/mobile-menu-Dc4-ZKew.css">
   </head>
   <body>
-    <header
-      class="flex flex-row items-center justify-between p-4 bg-azure-blue text-white border-b-32 border-b-pale-amber"
-    >
-      <!-- Replace with science club logo -->
-      <a href="/">
-        <svg
-          fill="#ffc61e"
-          height="50"
-          width="50"
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 0 381.669 381.669"
-          xml:space="preserve"
+    <header class="bg-azure-blue flex flex-col items-center text-white">
+      <!-- Container for logo and nav links -->
+      <div
+        class="flex w-full flex-col items-center p-4 sm:flex-row sm:justify-between"
+      >
+        <!-- Logo -->
+        <a href="/" class="">
+          <img
+            src="/school-club/microscope.svg"
+            alt="Science Club Logo"
+            class="h-16 w-auto"
+          />
+        </a>
+        <!-- Desktop navigation -->
+        <nav class="hidden sm:flex sm:flex-row sm:gap-6 sm:p-2 sm:text-xl">
+          <a href="/">About</a>
+          <a href="./contact">Contact</a>
+          <a href="#">Events</a>
+          <a href="./join">Join</a>
+        </nav>
+      </div>
+      <!-- Smaller screen navigation -->
+      <div
+        id="mobile-menu"
+        class="bg-pale-amber text-onyx flex h-fit w-full flex-col items-center p-4 sm:hidden"
+      >
+        <button
+          id="menu-toggle"
+          aria-expanded="false"
+          class="flex h-fit w-full justify-center pt-6 pr-4 pb-6 pl-4"
         >
-          <g>
-            <path
-              d="M310.237,337.919h-21.16l-5.988-173.524c-0.04-33.845-15.758-44.933-21.68-49.111c-0.27-0.19-23.414-15.993-23.414-15.993
-            l4.646-7.9c2.1-3.569,0.908-8.167-2.662-10.268l-4.429-2.605l11.48-19.519l6.673,3.925c1.163,0.684,2.477,1.035,3.803,1.035
-            c0.63,0,1.263-0.079,1.883-0.24c1.925-0.499,3.573-1.743,4.582-3.458l11.065-18.814c2.1-3.57,0.908-8.166-2.662-10.267
-            L221.128,1.036c-1.716-1.01-3.761-1.296-5.686-0.795c-1.925,0.499-3.573,1.743-4.582,3.458l-11.066,18.814
-            c-2.1,3.57-0.908,8.166,2.662,10.267l6.672,3.924l-11.481,19.52l-4.429-2.606c-1.716-1.009-3.76-1.298-5.686-0.795
-            c-1.925,0.499-3.573,1.743-4.582,3.457l-72.42,123.127c-2.1,3.57-0.908,8.167,2.662,10.268l8.074,4.749l-13.872,23.585
-            c-1.009,1.715-1.294,3.76-0.795,5.687c0.499,1.925,1.743,3.572,3.458,4.581l17.685,10.4c1.194,0.702,2.503,1.036,3.795,1.036
-            c2.57,0,5.074-1.322,6.472-3.698l13.871-23.584l8.073,4.748c1.163,0.684,2.477,1.035,3.803,1.035c0.63,0,1.263-0.079,1.883-0.24
-            c1.925-0.499,3.573-1.743,4.582-3.457l11.214-19.064l18.146,10.674c4.689,2.758,8.024,7.178,9.391,12.446
-            c1.365,5.267,0.599,10.751-2.16,15.44l-32.244,54.823l-12.668-7.451l1.851-3.146c2.1-3.57,0.908-8.167-2.662-10.268l-92.84-54.605
-            c-1.716-1.009-3.761-1.296-5.686-0.794c-1.926,0.498-3.574,1.742-4.582,3.457L46.679,235.25c-2.1,3.57-0.907,8.167,2.663,10.267
-            l14.065,8.273l-6.793,11.549c-2.1,3.571-0.908,8.168,2.662,10.268l51.776,30.453c1.163,0.684,2.477,1.035,3.803,1.035
-            c0.63,0,1.263-0.079,1.883-0.24c1.925-0.499,3.573-1.743,4.582-3.458l6.793-11.55l7.619,4.48l-24.479,41.592H74.292
-            c-14.22,0-25.789,11.569-25.789,25.789v10.461c0,4.143,3.357,7.5,7.5,7.5h272.523c4.143,0,7.5-3.357,7.5-7.5v-10.461
-            C336.026,349.488,324.457,337.919,310.237,337.919z M219.987,17.769l38.318,22.537l-3.461,5.885l-38.318-22.536L219.987,17.769z
-            M222.058,44.31l12.044,7.084l-11.48,19.519l-0.392-0.23l-11.652-6.854L222.058,44.31z M128.883,221.945l-4.755-2.797
-            l10.068-17.119l4.755,2.797L128.883,221.945z M180.387,167.647l-19.292,32.8l-33.832-19.899L192.078,70.35l33.832,19.899
-            l-14.175,24.099c-2.906-0.856-5.925-1.312-8.97-1.312c-11.261,0-21.799,6.023-27.504,15.722
-            C167.705,141.606,170.212,157.636,180.387,167.647z M188.191,136.363c3.021-5.137,8.605-8.327,14.574-8.327
-            c2.987,0,5.938,0.807,8.534,2.333c8.023,4.721,10.712,15.087,5.993,23.109c-3.021,5.137-8.605,8.327-14.574,8.327
-            c-2.987,0-5.938-0.807-8.533-2.334C186.162,154.752,183.473,144.385,188.191,136.363z M112.193,289.328l-38.848-22.849l2.99-5.085
-            l38.848,22.849L112.193,289.328z M63.41,236.389l3.699-6.29l79.91,47l-3.699,6.29L63.41,236.389z M154.296,294.314l19.132,11.253
-            c1.163,0.684,2.477,1.035,3.803,1.035c0.63,0,1.263-0.079,1.883-0.239c1.925-0.5,3.573-1.744,4.582-3.457l36.047-61.288
-            c4.79-8.143,6.121-17.666,3.75-26.811c-2.371-9.146-8.163-16.82-16.306-21.609l-18.146-10.675l4.223-7.179
-            c3.055,0.953,6.24,1.462,9.456,1.462c11.262,0,21.801-6.024,27.504-15.723c7.646-13,4.985-29.254-5.493-39.238l5.645-9.597
-            c0,0,22.087,15.079,22.388,15.292c4.586,3.235,15.327,10.814,15.327,36.986c0,0.087,0.002,0.173,0.005,0.259l5.976,173.134H128.653
-            L154.296,294.314z M321.026,366.669H63.503v-2.961c0-5.949,4.84-10.789,10.789-10.789h235.945c5.949,0,10.789,4.84,10.789,10.789
-            V366.669z"
-            />
-          </g>
-        </svg>
-      </a>
-      <!-- - -->
-      <div class="flex flex-row gap-6 p-2 text-xl">
-        <a href="/">About</a>
-        <a href="./contact">Contact</a>
-        <a href="#">Events</a>
-        <a href="./join">Join</a>
+          <img
+            src="/school-club/menu_icon.svg"
+            alt="Menu Icon"
+            class="h-8 w-auto self-center"
+          />
+        </button>
+        <nav
+          aria-hidden="true"
+          class="flex hidden flex-col gap-4 text-center text-lg"
+        >
+          <a href="/">About</a>
+          <a href="./contact">Contact</a>
+          <a href="#">Events</a>
+          <a href="./join">Join</a>
+        </nav>
       </div>
     </header>
     <main>
       <div
         id="event-container"
-        class="relative flex flex-row items-center justify-between min-h-80 w-full overflow-hidden"
+        class="relative flex min-h-80 w-full flex-row items-center justify-between overflow-hidden"
       >
         <img
           src="/school-club/media/club_banner.jpg"
           alt="Science Club Events"
-          class="absolute w-full h-full object-cover"
+          class="absolute h-full w-full object-cover"
         />
         <div
           id="banner-overlay"
-          class="absolute w-full h-full bg-linear-to-r from-onyx/95 to-onyx/0 z-0 inset-shadow-sm inset-shadow-onyx"
+          class="from-onyx/95 to-onyx/0 inset-shadow-onyx absolute z-0 h-full w-full bg-linear-to-r inset-shadow-sm"
         ></div>
         <!-- Event Box -->
         <div
-          class="bg-pale-slate/98 z-10 rounded-md p-8 m-16 max-w-3/4 drop-shadow-lg/50"
+          class="bg-pale-slate/98 z-10 m-16 max-w-3/4 rounded-md p-8 drop-shadow-lg/50"
         >
-          <h1 class="font-extrabold text-5xl mb-4">Upcoming Events</h1>
+          <h1 class="mb-4 text-5xl font-extrabold">Upcoming Events</h1>
           <div class="flex flex-col gap-6 text-lg">
             <div
-              class="bg-slate-500/20 p-4 rounded-md border-t-8 border-t-pale-amber"
+              class="border-t-pale-amber rounded-md border-t-8 bg-slate-500/20 p-4"
             >
-              <h2 class="font-bold text-2xl">🔬 Lab Exploration Day</h2>
+              <h2 class="text-2xl font-bold">🔬 Lab Exploration Day</h2>
               <p class="italic">
                 Date: March 12th, 2026 | Time: 10:00 AM - 1:00pm
               </p>
@@ -101,18 +92,18 @@
               </p>
             </div>
             <div
-              class="bg-slate-500/20 p-4 rounded-sm border-t-8 border-t-pale-amber"
+              class="border-t-pale-amber rounded-sm border-t-8 bg-slate-500/20 p-4"
             >
-              <h2 class="font-bold text-2xl">🌱 Environmental Science Talk</h2>
+              <h2 class="text-2xl font-bold">🌱 Environmental Science Talk</h2>
               <p class="italic">
                 Date: April 5th, 2026 | Time: 1:00 PM - 3:00 PM
               </p>
               <p>Guest speaker on sustainability.</p>
             </div>
             <div
-              class="bg-slate-500/20 p-4 rounded-sm border-t-8 border-t-pale-amber"
+              class="border-t-pale-amber rounded-sm border-t-8 bg-slate-500/20 p-4"
             >
-              <h2 class="font-bold text-2xl">🧪 Science Fair Workshop</h2>
+              <h2 class="text-2xl font-bold">🧪 Science Fair Workshop</h2>
               <p class="italic">
                 Date: April 20th, 2026 | Time: 10:00 AM - 1:00 PM
               </p>
@@ -126,9 +117,9 @@
       </div>
     </main>
     <footer
-      class="flex flex-row min-h-1/4 overflow-clip p-16 bg-onyx gap-6 text-white border-t-16 border-t-pale-amber"
+      class="bg-onyx border-t-pale-amber flex min-h-1/4 flex-row gap-6 overflow-clip border-t-16 p-16 text-white"
     >
-      <div id="copyright" class="flex flex-col items-start max-w-1/4">
+      <div id="copyright" class="flex max-w-1/4 flex-col items-start">
         <p>&copy; 2026 San Jacinto College Science Club</p>
         <p>Logo sourced online and used for educational purposes only.</p>
       </div>
